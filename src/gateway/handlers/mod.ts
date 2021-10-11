@@ -442,6 +442,7 @@ export type ClientEvents = {
   commandUserMissingPermissions: [ctx: CommandContext, missing: string[]]
   commandMissingArgs: [ctx: CommandContext]
   commandUsed: [ctx: CommandContext]
+  commandFinished: [ctx: CommandContext]
   commandError: [ctx: CommandContext, err: Error]
   commandNotFound: [msg: Message, parsedCmd: ParsedCommand]
   gatewayError: [err: ErrorEvent, shards: [number, number]]
